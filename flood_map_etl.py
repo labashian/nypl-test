@@ -171,7 +171,7 @@ def main():
     user_input.get_input()
 
     ## Extract
-    print("Extract: getting fload plain 2100 data...\n")
+    print("Extract: getting floodplain 2100 data...\n")
     flood_plain_2100_extractor = Extract()
     flood_df = flood_plain_2100_extractor.get_data(f_or_b=0)
     flood_geom = flood_df["the_geom"][0]
