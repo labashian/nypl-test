@@ -93,7 +93,7 @@ class Extract:
             all_results.extend(results)
             
             if f_or_b == 1:
-                print(f"\rExtract: fetched {len(all_results)} buildings so far...\n", end='', flush=True)
+                print(f"Extract: fetched {len(all_results)} buildings so far...",)
             
             if len(results) < limit:
                 break
