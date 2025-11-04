@@ -2,12 +2,16 @@
 
 ## Data Sources:
  [NYC Building Footprints](https://data.cityofnewyork.us/City-Government/Building-Footprints-Map-/jh45-qr5r)
- [2100 100-year Floodplain] (https://data.cityofnewyork.us/Environment/Sea-Level-Rise-Maps-2100-100-year-Floodplain-/rf9r-c4pz/about_data)
+
+  [2100 100-year Floodplain](https://data.cityofnewyork.us/Environment/Sea-Level-Rise-Maps-2100-100-year-Floodplain-/rf9r-c4pz/about_data)
+ 
 
 ## Running the pipeline
-I used [uv] (https://docs.astral.sh/uv/) as my package manager and virtual environment, in part due to positive personal experience and recent positive coverage of the tool: https://emily.space/posts/251023-uv
+I used [uv](https://docs.astral.sh/uv/) as my package manager and virtual environment, in part due to positive personal experience and [recent positive coverage](https://emily.space/posts/251023-uv) of the tool: 
 
 In order to run the pipeline, please follow the install instructions for uv. 
+
+you can then type `uv run flood_map_etl.py` to run the program.
 
 ## Purpose
 I decided to combine two map data sets to create a dataset that would enable a user to create a map that could visualize and quantify the relative risk to buildings in a chosen borough of New York City.
