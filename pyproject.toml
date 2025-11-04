@@ -1,7 +1,7 @@
 [project]
 name = "nypl-test"
 version = "0.1.0"
-description = "Add your description here"
+description = "NYPL coding assessment"
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
