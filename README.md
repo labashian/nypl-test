@@ -14,7 +14,7 @@ In order to run the pipeline, please follow the install instructions for uv.
 you can then type `uv run flood_map_etl.py` to run the program.
 
 ## Purpose
-I decided to combine two map data sets to create a dataset that would enable a user to create a map that could visualize and quantify the relative risk to buildings in a chosen borough of New York City.
+I decided to combine two map datasets to create a dataset that would enable a user to create a new map that could visualize and quantify the relative future flood risk to buildings in a chosen borough of New York City.
 
 ## Method
 I accomplished this through a simple user interface system, where the user selects which borough they would like to examine. Once the user selects the borough, this pipeline then extracts data from the NYC OpenData/Socrata API, but limits extracted buildings to ones in a particular borough based on the "bin" attribute, as well as buildings with a "ground_elevation" attribute value of less than 20 ft. Then using pandas and shapely, the GeoJSON of each building in this set is compared against the GeoJSON of the 2100 100-year flood plain, and buildings that do not intersect are filtered out. Finally, using the qcut method from pandas, the buildings are separated into 3 equal percentiles based on elevation and assigned "Highest Risk", "Medium Risk", or "Lowest Risk."
