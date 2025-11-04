@@ -3,9 +3,11 @@ name = "nypl-test"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.14"
 dependencies = [
     "pandas>=2.3.3",
     "requests>=2.32.5",
+    "ruff>=0.14.3",
+    "shapely>=2.1.2",
     "sodapy>=2.2.0",
 ]
